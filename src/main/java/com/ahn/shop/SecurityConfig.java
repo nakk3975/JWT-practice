@@ -25,6 +25,10 @@ public class SecurityConfig {
         http.authorizeHttpRequests((authorize) ->
                 authorize.requestMatchers("/**").permitAll()
         ); // "/**" 에 url을 넣어 특정 url만 검사 가능
+        http.formLogin((formLogin)
+            -> formLogin.loginPage("/login")
+            .defaultSuccessUrl("/")
+        );
         return http.build();
     }
 }

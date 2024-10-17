@@ -32,4 +32,9 @@ public class MemberController {
         this.memberRepository.save(member);
         return "redirect:/about";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login.html";
+    }
 }
