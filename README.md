@@ -1,5 +1,7 @@
 # Spring Security & JWT Practice
 
+> 백엔드 학습 · 폼 로그인·JWT 확장 준비
+
 Spring Security 기반 회원 인증과 JWT 적용 과정을 학습하기 위해 만든 Spring Boot 프로젝트입니다.
 
 ## 현재 구현 내용
@@ -15,15 +17,22 @@ Spring Security 기반 회원 인증과 JWT 적용 과정을 학습하기 위해
 
 ## 기술 스택
 
-- Java 17
-- Spring Boot 3.3.4
-- Spring Security
-- Spring Data JPA
-- Thymeleaf
-- MySQL
-- Lombok
-- JJWT 0.12.5
-- Gradle
+| 영역 | 기술 |
+| --- | --- |
+| 언어 | Java 17 |
+| 프레임워크·라이브러리 | Spring Boot 3.3.4, Spring Security |
+| 데이터·라이브러리 | Spring Data JPA, MySQL, Lombok, JJWT 0.12.5 |
+| 화면 | Thymeleaf |
+| 개발 도구 | Gradle |
+
+## 코드 둘러보기
+
+| 위치 | 내용 |
+| --- | --- |
+| [SecurityConfig.java](src/main/java/com/ahn/shop/SecurityConfig.java) | 인증 설정 |
+| [shop/member](src/main/java/com/ahn/shop/member) | 회원·인증 사용자 처리 |
+| [src/main/resources/templates](src/main/resources/templates) | Thymeleaf 화면 |
+| [build.gradle](build.gradle) | Spring Security·JPA·JJWT 의존성 |
 
 ## 실행 방법
 
@@ -42,3 +51,7 @@ gradlew.bat bootRun
 ## 참고
 
 현재 코드는 Spring Security의 폼 로그인과 회원 인증 흐름이 구현된 학습 단계이며, JWT 관련 의존성을 추가해 토큰 기반 인증으로 확장하는 과정을 연습하기 위한 저장소입니다.
+
+---
+
+**함께 보기** · [Memo](https://github.com/nakk3975/Memo) · [SNS](https://github.com/nakk3975/SNS)
