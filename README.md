@@ -1,5 +1,7 @@
 # Spring Security & JWT Practice
 
+[개발자 소개 · 전체 프로젝트](https://github.com/nakk3975/TripPlan/blob/main/PORTFOLIO.md)
+
 > 백엔드 학습 · 폼 로그인·JWT 확장 준비
 
 Spring Security 기반 회원 인증과 JWT 적용 과정을 학습하기 위해 만든 Spring Boot 프로젝트입니다.
